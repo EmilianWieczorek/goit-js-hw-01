@@ -1,10 +1,7 @@
 "use strict";
 
-const price = 1;
-const deliveryFee = 1;
-const country = 1;
-
-function getShippingMessage(price, deliveryFee) {
+function getShippingMessage(country, price, deliveryFee) {
+  country = "Australia";
   const totalPrice = price * deliveryFee;
   console.log(`Shipping to ${country} will cost ${totalPrice} credits`);
 }
