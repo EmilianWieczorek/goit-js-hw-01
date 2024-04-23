@@ -1,23 +1,12 @@
 "use strict";
 
 function getElementWidth(content, padding, border) {
-  Number.parseFloat(content);
-  Number.parseFloat(padding);
-  Number.parseFloat(border);
-  //const boxSizing = padding * 2;
-  //const borderBox = border * 2;
-  const width = Number.parseFloat(content + padding + border);
+  const contentValue = Number.parseFloat(content);
+  const paddingValue = Number.parseFloat(padding);
+  const borderValue = Number.parseFloat(border);
+
+  const width = contentValue + paddingValue * 2 + borderValue * 2;
+
+  //return contentValue + paddingValue * 2 + borderValue * 2;
   console.log(`${width}`);
 }
-
-//const content = 1;
-//const padding = 1;
-//const border = 1;
-//function getElementWidth(content, padding, border) {
-//console.log(content);
-//console.log(padding);
-//console.log(border);
-//const parseFloat = content + padding + border;
-
-//console.log(`${parseFloat}`);
-//}
